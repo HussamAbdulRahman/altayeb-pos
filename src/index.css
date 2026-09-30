@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'IBM Plex Sans', 'IBM Plex Sans Arabic', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-arabic: 'IBM Plex Sans Arabic', 'IBM Plex Sans', ui-sans-serif, sans-serif;
+}
+
+:root {
+  --background: #0f1117;
+  --foreground: #f0ede8;
+  --card: #1a1d27;
+  --card-foreground: #f0ede8;
+  --primary: #f5a623;
+  --primary-foreground: #0f1117;
+  --secondary: #252836;
+  --secondary-foreground: #c8c4bc;
+  --muted: #1e2130;
+  --muted-foreground: #8a8680;
+  --accent: #f5a623;
+  --accent-foreground: #0f1117;
+  --border: #2e3145;
+  --ring: #f5a623;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+[dir="rtl"] {
+  font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', ui-sans-serif, sans-serif;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted-foreground); }
